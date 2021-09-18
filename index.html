@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Areeb Mustafa</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="https://kit.fontawesome.com/e87d687bba.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+          console.log("comes here");
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+  
+  
+  <section class="colored-section" id="title">
+
+
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Areeb Mustafa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+          <ul class="navbar-nav ml-auto">
+            <a class="nav-link" href="#me"><li class="nav-item">About</li></a>
+            <a class="nav-link" href="#pricing"><li class="nav-item">Projects</li></a>
+            <a class="nav-link" href="#e"><li class="nav-item">Experience</li></a>
+            <a class="nav-link" href="#cta"><li class="nav-item">Contact Infomation</li></a>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+      <!-- Title -->
+      <div class="row">
+
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Welcome to my website!</h1>
+          <!-- <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button> -->
+          <button onclick="location.href='https://www.google.ca'" class="btn btn-outline-light btn-lg download-button" type="button"><i class="far fa-file"></i> Download Resume</button>
+          <button onclick="location.href='https://github.com/areebmustafa03'"" class="btn btn-lg btn-dark download-button" type="button"><i class="fab fa-github"></i> Github</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/areeb.jpeg" alt="areeb">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  
+
+  <section class="white-section" id="me" >
+
+
+    <div class="container-fluid" >
+      <h3 class="big-heading">About Me</h3>
+      <p class="add-color">Hi My name is Areeb Mustafa. I am student who studied Computer Science and I want to
+        become a Software Developer. Coding is my biggest passion. I love building new things and helping
+        the world solve problems that we face in our day to day lives. I also enjoy listening to music, running, going 
+        for hikes and I love to write (Want to start writing a blog!!). I am planning on starting
+        my Masters in Computer Science and specialize in Machine Learning as I very interested in this 
+        topic. I am currently a Support Engineer at Canada Revenue Agency however I am looking for Software
+        Development roles so if you're interested feel free to contact me so you can learn more about me 
+        and I can learn more about you. Feel free to check out the rest of my website to learn more my projects 
+        and work experience.
+      </p>
+      
+    </div>
+
+  </section>
+ 
+
+  <section class="colored-section" id="pricing">
+
+    <h2 class="section-heading">Projects</h2>
+    <p class="price-subheading other-color">Some cool projects that I have worked on and many more on my Github.</p>
+
+    <div class="row">
+
+      <div class="pricing column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="black-color">Geneology Family Application</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="black-color">C, HTML/CSS, JavaScript(Node.js), SQL</h5>
+            <p class="black-color">Implemented an algorithm to parse and write genealogy family files using a back end written in C</p>
+            <p class="black-color">Created RESTful APIs for accessing database of family data and CRUD functionality.</p>
+            <button onclick="location.href='https://github.com/areebmustafa03/Genealogy-GEDCOM-Application'" class="btn btn-lg btn-block btn-outline-dark" type="button">Check out the code</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <div class="pricing column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="black-color">Contact Application</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="black-color">MERN Stack</h5>
+            
+            
+            <p class="black-color">Developed a MERN stack application to add, delete, update contacts on respective accounts</p>
+            <p class="black-color">Implemented front-end user interface using hooks and context API and deployed project through Heroku</p>
+            <button onclick="location.href='https://obscure-forest-53958.herokuapp.com/'" class="btn btn-lg btn-block btn-outline-dark" type="button">Check out the website</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="black-color">Weather Application</h3>
+          </div>
+          <div class="card-body">
+            <h5 class="black-color">React.js + Material-UI</h5>  
+            <p class="black-color">Developed a front-end application to track weather in 196 countries and 200,000+ cities.</p>
+            <p class="black-color">Fetched data from OpenWeatherMap API using axios and displayed towards front-end using Material-UI</p>
+            <button onclick="location.href='https://weatherapp34234234234.netlify.app'"  class="btn btn-lg btn-block btn-outline-dark" type="button">Check out the website</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="white-section" id="e">
+    <div class="container-fluid">
+      <h3 class="big-heading black-color">Work Experience</h3>
+      <p>I've had various work experience throughout my career and I want to keep growing.
+        I have worked as tutor and teaching assisant where I guided students with programming concepts and 
+        other classes such as mathematics. I have also worked as Freelance devloper where I built 
+        websites for small business such as clothing stores and hair salons. Before I got into programming
+        I was working at Wendy's Resturant as a Grill Cook and Sandwich artist. My peformance was very outstanding
+        such that I had received Employee of Month at one point. I have other experiences as well which you can checkout
+        on my resume.
+      </p>
+      <button class="btn btn-lg btn-dark download-button" type="button"><i class="far fa-file"></i>  Download Resume</button>
+      
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="colored-section" id="cta">
+    <div class="container-fluid">
+      <a href="https://twitter.com/theareebmustafa"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/areeb.mustafa.3/"><i class="fab fa-facebook-f"></i></a>
+ 
+      <a href="https://www.linkedin.com/in/areeb-mustafa/"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:areeb183@gmail.com"> <i class="fas fa-envelope"></i></a>
+      <p class="copyright">© Copyright 2021 Areeb Mustafa</p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="https://kit.fontawesome.com/d5389736da.js" crossorigin="anonymous"></script>
+</html>
